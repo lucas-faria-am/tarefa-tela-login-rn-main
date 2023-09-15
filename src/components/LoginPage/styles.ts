@@ -14,6 +14,7 @@ export default StyleSheet.create({
     backgroundColor: 'white',
     width: '90%',
     margin: 30,
+    padding: 2,
     borderRadius: 30,
     alignItems: 'center'
   },
@@ -98,7 +99,29 @@ export default StyleSheet.create({
   },
 
   logo: {
-    width: 65,
-    height: 55,
+    marginTop: 80,
+    alignSelf: 'center',
+    width: 80,
+    height: 81,
+  },
+  redesSociais: {
+    flexDirection: 'row',
+    justifyContent: 'flex-start',
+    marginLeft: 10,
+    alignContent: 'stretch',
+    alignSelf: 'auto',
+  },
+  faceBook: {
+    margin: 25,
+    color: '#3b5998'
+  },
+  google: {
+    margin: 25,
+    color: '#eb4034'
+  },
+  twitter: {
+    margin: 25,
+    color: 'blue'
   }
+  
 });

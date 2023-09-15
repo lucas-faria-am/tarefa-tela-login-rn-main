@@ -1,13 +1,14 @@
 import styles from './styles';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { View, TextInput, TouchableOpacity, Text, Image} from 'react-native';
-
+import logo from '../../../assets/jolly.jpg';
 
 export default function Login() {
 
   return (
     <View style={styles.main}>
       <View style={styles.container}>
+        <Image style={styles.logo} source={logo} />
         <View>
           <Text style={styles.title}>App DDM Unigoiás</Text>
           <Text style={styles.subTitle}>Prof. Sandro TC</Text>
@@ -41,6 +42,11 @@ export default function Login() {
         >
           <Text style={styles.textButton} >Login</Text>
         </TouchableOpacity>
+        <View style={styles.redesSociais}>
+          <Icon style={styles.faceBook} name={'facebook'} size={20} />
+          <Icon style={styles.google} name={'google'} size={20} />
+          <Icon style={styles.twitter} name={'twitter'} size={20} />
+        </View>
       </View>
     </View>
   );
